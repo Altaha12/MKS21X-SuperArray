@@ -9,4 +9,6 @@ public class SuperArray{
   public String toString(){String S="["; for(int i=0;i<size-1;i++)S+=data[i];S+=data[size]+"]";return S}
   public String toStringDepug(){String S="["; for(int i=0;i<size-1;i++)S+=data[i];S+=data[size]+"]";return S}
   public String get(int index){if(!(index < 0 || index >= size()))return data[index];else return null;}
+  public String set(int index, String str){if(!(index < 0 || index >= size())){data[index]=str;Sytem.out.println(index+':'+str);}else {System.out.println("error"); return null;}}
+  
 }
